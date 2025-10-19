@@ -10,6 +10,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import LoginModal from "./LoginModal"; // Importa el componente de Login como Modal
+// Bar.jsx
 
 export default function Bar() {
   // Opciones del menú (Drawer)
@@ -21,7 +22,7 @@ export default function Bar() {
   ];
 
   // Cambiamos el estado inicial de 'auth' a false (no logueado) para probar el login.
-  const [auth, setAuth] = React.useState(false); 
+const [auth, setAuth] = useState(false); // setAuth es la variable no utilizada
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [openLogin, setOpenLogin] = React.useState(false); // Estado para el Login Modal
 
